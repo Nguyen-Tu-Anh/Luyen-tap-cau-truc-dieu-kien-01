@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let minute = +prompt('Nhập số phút bạn đã gọi');
+    let money1 = minute * 1000;
+
+    let money2 = (minute-100)*1200 + (minute-(minute-100))*1000 ;
+    if (minute<=100) {
+        alert('So tien ban phai dong la:' + ' ' + money1 + ' VND');
+    } else {
+        alert('So tien ban phai dong la:' + ' ' + money2 + ' VND');
+        console.log(money2);
+    }
+
+
+</script>
+</body>
+</html>
